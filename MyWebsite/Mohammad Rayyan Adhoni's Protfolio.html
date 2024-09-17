@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" href="Images/360_F_565796170_C4fuivt1qGdDtTGKVpQzcYx7p8PzXEGI.jpg">
+    <script src="https://kit.fontawesome.com/f9336084cb.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class = "container">
+        <nav>
+          <img src="Images/Logo.png" class = "logo">
+          <div class = "Outer-Menu">
+            <ul id="Menu">
+              <li><a href="#header" onclick="Home()">Home</a></li>
+              <li><a href="#about" onclick="About()">About</a></li>
+              <li><a href="#MyProjects" onclick="Projects()">Projects</a></li>
+              <li><a href="#Contact" onclick="Contact()">Contact</a></li>
+              <i class="fa-solid fa-xmark fa-lg" onclick="closeMenu()"></i>
+            </ul> <!-- end of unordered list -->
+            <i class="fa-solid fa-bars fa-lg" onclick="openMenu()"></i>
+          </div>
+        </nav>  
+        <div class="header txt">
+          <p>2nd Year MEng Computer Science</p>
+          <h1>Hi I'm <span>Mohammad<br>Rayyan Adhoni<br /></span>from India</h1>
+        </div>    <!-- header.txt div ends here -->
+      </div>      <!-- container div ends here -->
+    </div>        <!-- header div ends here -->
+
+<!---------------------------------- About ------------------------------------------>
+    <div id="about">
+      <div class = "container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/IMG_9570__1_-removebg.png">
+          </div>  <!-- About-col-1 div ends here -->
+          <div class="about-col-2">
+            <h1 class="sub-about-me">About Me</h1>
+            <p class="about-me-part1">
+              Hello World! I'm Mohammad Rayyan Adhoni, a 19-year-old student pursuing Master of Engineering for Computer Science at University of Strathclyde in Glasgow, Scotland.
+              I'm originally from Abu Dhabi, UAE. My academic journey began from Gems United Indian School, and started to have interest on computer science.
+              As i have a little bit of experience on Web Page Development, This is the best I can make.
+            </p><br>
+            <p class="about-me-part2">
+              My current area of focus is back-end dev, but I have collaborated with a group on a website design project. this has given me a bit experience on front-end dev, 
+              which have also improved my coding, problem-solving, and collaborative abilities. Also I have done a solo project on Car dealership on Python and MySQL, this was done 
+              during my High School year. I have a passion for learning and I am always eager to expand my knowledge. I have recently joined a coding bootcamp to further my skills.
+            </p><br>
+            <p class="about-me-part3">
+              When I'm not studying or working on projects, you can find me on instagram, or either i might be playing some video games. <b>Welcome to my Webpage!!</b>
+            </p>
+            <div class="tab">
+              <p class="links active_type" onclick="opentab('Education')">Education</p>
+              <p class="links" onclick="opentab('Projects')">Projects</p>
+              <p class="links" onclick="opentab('Skills')">Skills</p>
+            </div>  <!-- tabs ends here -->
+<!------------- Education contents ------------------->            
+            <div class="tab-contents Active" id="Education">
+              <ul>
+                <li><span>Gems United Indian School, Abu Dhabi, UAE</span><br><br>
+                  <ol>Central Board of Secondary Education <b>(CBSE) </b>--- Grade 10</ol><br>
+                  <ol>Central Board of Secondary Education <b>(CBSE) </b>--- Grade 12</ol><br>
+                </li>
+                <li><span>University of Strathclyde, Galsgow, Scotland</span><br><br>
+                  <ol>Masters of Engineering Computer Science (Year 2)<b>--- On-going!!</b></ol><br><br>
+                </li>
+              </ul>
+            </div>  <!-- tabs contents ends here -->
+<!------------- Projects Contents ------------------>
+            <div class="tab-contents" id="Projects">
+              <ul>
+                <li><span>Python</span>
+                  <ol>Developing a database-driven application integrating MySQL and <b>Data Manipulation</b> techniques.</ol>
+                  <a href="/Main_Webpage/PYTHONproject.html">Click here to view</a>
+                </li><br>
+                <li><span>SQL</span>
+                  <ol>Implements data storage functionality based on <b>user-provided</b> inputs.</ol>
+                  <a href="/Main_Webpage/SQL.html">Click here to view</a>
+                </li><br>
+                <li><span>HTML</span>
+                  <ol>Initiating the development of my debut <b>Personal Website.</b></ol>
+                  <a href="/External_links/Assignment_1/Assignment 1 2/homepage.html">Click here to view</a>
+                </li>
+              </ul>
+            </div>  <!-- tabs contents ends here -->
+<!-------------------- Skills Contents -------------->
+            <div class="tab-contents" id="Skills">
+              <div class="skills">
+                <li>
+                  <i class="fa-brands fa-java fa-2xl"></i><h3>Java - 45%</h3>
+                  <span class="Bar"><span class="Java"></span></span>
+                </li>
+                <li>
+                  <i class="fa-brands fa-python fa-2xl"></i><h3>Python - 55%</h3>
+                  <span class="Bar"><span class="Python"></span></span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-database fa-2xl"></i><h3>MySQL - 65%</h3>
+                  <span class="Bar"><span class="MySQL"></span></span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-c fa-2xl"></i>
+                  <h3>C - 25%  (ON PROGRESS...)</h3>
+                  <span class="Bar"><span class="C"></span></span>
+                </li>
+              </div>
+            </div>  <!-- tabs contents ends here -->
+          </div>    <!-- About-col-2 div ends here -->
+        </div>      <!-- row div end here --> 
+      </div>        <!-- container div ends here -->
+    </div>          <!-- about div ends here -->
+
+<!---------------------------------- Projects ------------------------------------------>    
+    <div id="MyProjects">
+      <div class="container">
+        <h1 class="sub-about-me">My Projects</h1>
+        <div class="project-lists">
+          <div>
+            <i class="fa-brands fa-python fa-2xl" style="color: #FFD43B;"></i>
+            <h2>Python Project</h2>
+            <p>This Python program manages a car dealership, 
+              offering functions for customers and employees. 
+              Customers can browse cars and make purchases, 
+              while employees can perform database operations. 
+              The system includes interactive interfaces and ASCII 
+              art visuals, enhancing user experience.</p>
+            <a href="/Main_Webpage/PYTHONproject.html" target="_blank">View Project</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-html5 fa-2xl" style="color: #74C0FC;"></i>
+            <h2>First HTML Project</h2>
+            <p>This was my First ever <b>HTML group project</b>.</p>
+            <p>We were given a task on various topics, and chose the topic <b>Computing and climate action </b>and most probably working in Laptop screen size.</p>
+            <a href="External_links/Assignment_1/Assignment 1 2/homepage.html" target="_blank">View Project</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database fa-2xl" style="color: #6000f0;"></i>
+            <h2>SQL Project</h2>
+            <p>This MySQL project integrates python project, the SQL has queries to manage a car dealership database, allowing operations such as displaying available cars, editing details, grouping records, and deleting entries.</p>
+            <a href="Main_Webpage/SQL.html" target="_blank">View Project</a>
+          </div>
+        </div>      <!-- sub-about-me ends here -->
+      </div>        <!-- Container ends here    -->
+    </div>          <!-- MyProjects ends here   -->
+<!---------------------------------- Contact ------------------------------------------>
+    <div id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-about-me">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope fa-sm"></i>Rayyanadhoni107@gmail.com</p>
+            <p><i class="fa-solid fa-phone fa-sm"></i>+44 7587 480115</p>
+            <div class="Social_Media">
+              <a href="https://wa.me/447587480115" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+              <a href="https://discord.com/users/1204825531422478420" target="_blank"><i class="fa-brands fa-discord fa-2xl"></i></a>
+              <a href="https://www.instagram.com/rayyan.a_10/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+              <a href="https://github.com/MoRayyan107/MyRepo/tree/main" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+              <a href="https://www.linkedin.com/in/mohammad-rayyan-adhoni-33074b31b/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            </div>
+          </div>    <!-- Contact-left ends here  -->
+          <div class="contact-right">
+            <h3>Currently Not Working.......</h3>
+            <form id="contactForm" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="Email" name="Email" placeholder="Your Email" required>
+              <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn1">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>    <!-- Contact-right ends here -->
+        </div>      <!-- Row ends here           -->
+      </div>        <!-- Container ends here     -->
+    </div>          <!-- Contact ends here       -->
+    
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "username",
+          Password : "password",
+          To : 'them@website.com',
+          From : "you@isp.com",
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );      
+      }
+    </script> -->
+    <script>
+      var links = document.getElementsByClassName("links");
+      var contents = document.getElementsByClassName("tab-contents");
+      function opentab(id) {
+        for (TabLinks of links){
+          TabLinks.classList.remove("active_type");
+        }
+        for (TabContents of contents){
+          TabContents.classList.remove("Active");
+        }
+        event.currentTarget.classList.add("active_type");
+        document.getElementById(id).classList.add("Active");
+      }
+
+      var options = document.getElementById('Menu');
+      
+      function openMenu() {
+        options.style.right = '0';
+      }
+      function closeMenu() {
+        options.style.right = '-150px';
+      }
+      function Home(){
+        options.style.right = '-150px';
+      }
+      function About(){
+        options.style.right = '-150px';
+      }
+      function Projects(){
+        options.style.right = '-150px';
+      }
+      function Contact(){
+        options.style.right = '-150px';
+      }
+      /* Contact saving script  */
+    </script>
+
+  </body>
+</html>
